@@ -1,0 +1,56 @@
+@use "../../libs/variables.scss";
+@use "../../libs/mixins.scss";
+
+.footer {
+  background-color: variables.$basic-gray;
+}
+
+.footer__container {
+  display: flex;
+
+  @include mixins.mobile {
+    padding-top: 39px;
+    padding-bottom: 22px;
+    flex-direction: column;
+  }
+
+  @include mixins.tablet {
+    padding-top: 57px;
+    padding-bottom: 59px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  @include mixins.mobile {
+    padding-bottom: 32px;
+    align-self: center;
+  }
+}
+
+.footer__logo-title {
+  display: block;
+  fill: variables.$black;
+  color: variables.$black;
+}
+
+.footer__social {
+  @include mixins.mobile {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid variables.$special-grey2;
+    border-bottom: 1px solid variables.$special-grey2;
+  }
+}
+
+.footer__copyright {
+  @include mixins.mobile {
+    padding-top: 22px;
+  }
+
+  @include mixins.desktop {
+    justify-self: end;
+  }
+}
