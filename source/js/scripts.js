@@ -12,7 +12,7 @@ main_button.addEventListener('click', () => {
     else {
       main_menu.classList.add('main-nav__wrapper--closed');
     }
-    
+
   main_button.classList.toggle('main-nav__toggle--closed');
   main_button.classList.toggle('main-nav__toggle--opened');
 });

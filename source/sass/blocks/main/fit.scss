@@ -43,10 +43,56 @@
   display: grid;
 
   @include mixins.mobile {
-    gap: 22.5px;
-    /*min-height: 266px;*/
+    row-gap: 22.5px;
+    column-gap: 19px;
+    grid-template-columns: 50px auto;
     padding: 24px 20px;
     padding-bottom: 18px;
+    overflow-y: hidden;
+  }
+
+  @include mixins.tablet {
+    display: block;
+    min-height: 372px;
+    padding: 77px 316px 53px 52px;
+    position: relative;
+  }
+}
+
+.fit__image-wrapper {
+  background-color: variables.$basic-green;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+
+  @include mixins.mobile {
+    width: 50px;
+    grid-column: 1 / 2;
+  }
+
+  @include mixins.tablet {
+    width: 200px;
+  }
+
+  @include mixins.desktop {
+    width: 100px;
+  }
+}
+
+.fit__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+
+  &--slim {
+    transform: translate(-50%, -59%);
+  }
+
+  &--pro {
+    transform: translate(-52%, -52%) scale(134%);
   }
 }
 
@@ -59,6 +105,12 @@
   @include mixins.mobile {
     font-size: 24px;
     line-height: 37px;
+    grid-column: 2/3;
+  }
+
+  @include mixins.tablet {
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -143,6 +195,8 @@
   }
 
   @include mixins.tablet {
+    font-size: 20px;
+    line-height: 30px;
     padding-right: 57px;
   }
 }
