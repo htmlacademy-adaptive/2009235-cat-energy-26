@@ -50,7 +50,7 @@
     padding-top: 22px;
   }
 
-  @include mixins.desktop {
+  @include mixins.tablet {
     justify-self: end;
   }
 }

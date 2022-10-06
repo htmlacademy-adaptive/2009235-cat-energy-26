@@ -1,0 +1,113 @@
+@use "../../libs/variables.scss";
+@use "../../libs/mixins.scss";
+
+.work {
+  @include mixins.mobile {
+    margin-top: 43px;
+    margin-bottom: 26px;
+  }
+
+  @include mixins.tablet {
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
+
+  @include mixins.desktop {
+    margin-top: 71px;
+    margin-bottom: 69px;
+  }
+}
+
+.work__container {
+  @include mixins.tablet {
+    padding-bottom: 47px;
+    border-bottom: 1px solid variables.$special-grey;
+  }
+
+  @include mixins.desktop {
+    padding-bottom: 0;
+    border: none;
+  }
+}
+
+.work__title {
+  @include mixins.header-2;
+
+  @include mixins.mobile {
+    margin-bottom: 40px;
+  }
+
+  @include mixins.tablet {
+    margin-bottom: 32px;
+  }
+
+  @include mixins.desktop {
+    margin-bottom: 40px;
+  }
+}
+
+.work__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+
+  @include mixins.mobile {
+    gap: 20px;
+  }
+
+  @include mixins.tablet {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 153px;
+    row-gap: 37px;
+  }
+
+  @include mixins.desktop {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 94px;
+  }
+}
+
+.work__item {
+  display: grid;
+  justify-items: start;
+
+  @include mixins.mobile {
+    grid-template-columns: 60px auto;
+    gap: 20px;
+  }
+
+  @include mixins.tablet {
+    grid-template-columns: auto;
+    gap: 31px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    aspect-ratio: 1 / 1;
+    background-color: variables.$basic-green;
+    background-size: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-self: start;
+
+    @include mixins.mobile {
+      width: 60px;
+    }
+
+    @include mixins.tablet {
+      width: 80px;
+    }
+  }
+
+  &--sheet::before {
+    background-image: url("../img/work-sheet.svg");
+  }
+}
+
+.work__paragraph {
+  @include mixins.paragraph;
+  color: variables.$special-grey-dark;
+  align-self: center;
+}

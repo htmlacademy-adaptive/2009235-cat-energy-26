@@ -9,7 +9,7 @@
   background-color: transparent;
   border: none;
   margin: 0;
-  right: -20px;
+  right: 0;
   top: 0;
   padding: 24px 20px;
   width: 24px;
@@ -66,10 +66,10 @@
 
 .main-nav__wrapper {
   @include mixins.mobile {
-    width: calc(100% + 40px);
+    width: 100%;
     position: absolute;
     top: 100%;
-    right: -20px;
+    right: 0;
     z-index: -2;
     animation-duration: 0.2s;
     animation-timing-function: ease-in-out;
