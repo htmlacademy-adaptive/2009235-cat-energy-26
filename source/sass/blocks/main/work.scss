@@ -51,6 +51,7 @@
   margin: 0;
   padding: 0;
   display: grid;
+  counter-reset: work-counter;
 
   @include mixins.mobile {
     gap: 20px;
@@ -60,17 +61,20 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 153px;
     row-gap: 37px;
+    margin-right: 50px;
   }
 
   @include mixins.desktop {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 94px;
+    column-gap: 78px;
+    margin-right: 0;
   }
 }
 
 .work__item {
   display: grid;
   justify-items: start;
+  position: relative;
 
   @include mixins.mobile {
     grid-template-columns: 60px auto;
@@ -80,6 +84,9 @@
   @include mixins.tablet {
     grid-template-columns: auto;
     gap: 31px;
+    min-height: 280px;
+    padding: 40px 0;
+    align-content: start;
   }
 
   &::before {
@@ -103,6 +110,33 @@
 
   &--sheet::before {
     background-image: url("../img/work-sheet.svg");
+  }
+
+  &--flask::before {
+    background-image: url("../img/work-flask.svg");
+  }
+
+  &--cutlery::before {
+    background-image: url("../img/work-cutlery.svg");
+  }
+
+  &--watch::before {
+    background-image: url("../img/work-watch.svg");
+  }
+
+  @include mixins.tablet {
+    &::after {
+      counter-increment: work-counter;
+      content: counter(work-counter);
+      font-size: 280px;
+      line-height: 280px;
+      color: variables.$basic-gray;
+      position: absolute;
+      min-width: 130px;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
   }
 }
 
