@@ -1,0 +1,9 @@
+@use "../../libs/variables.scss";
+@use "../../libs/mixins.scss";
+
+
+.program {
+  @include mixins.mobile {
+    border-bottom: 1px solid variables.$special-grey-lightnes;
+  }
+}

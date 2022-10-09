@@ -14,6 +14,11 @@
   @include mixins.mobile {
     position: relative;
     z-index: 3;
+    border-bottom: 1px solid variables.$special-grey-lightnes;
+
+    &--index {
+      border: none;
+    }
   }
 
   @include mixins.tablet {
