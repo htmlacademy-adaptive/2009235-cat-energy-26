@@ -1,0 +1,67 @@
+@use "../libs/variables.scss";
+@use "../libs/mixins.scss";
+
+.input {
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--extra-dark);
+  background: var(--white);
+  border: 1px solid var(--neutral);
+  border-radius: 4px;
+  padding: 13px 15px;
+  margin: 0;
+  cursor: text;
+  outline: none;
+  box-shadow: none;
+}
+
+.input::placeholder {
+  color: var(--neutral);
+}
+
+.input:hover {
+  border-color: var(--extra-dark);
+}
+
+.input:focus {
+  padding: 12px 14px;
+  border: 2px solid var(--extra-dark);
+}
+
+.input:focus:invalid,
+.input.error {
+  border: 1px solid var(--error);
+  padding: 13px 15px;
+}
+
+.input:focus::placeholder {
+  opacity: 0;
+}
+
+.input:hover:invalid,
+.input:hover.error {
+  padding: 12px 14px;
+  border: 2px solid var(--error);
+}
+
+.input:disabled,
+.input:read-only {
+  padding: 13px 15px;
+  background-color: var(--light);
+  border: 1px solid var(--neutral);
+  color: var(--extra-dark);
+  cursor: default;
+}
+
+.input:disabled::placeholder {
+  color: var(--extra-dark);
+  opacity: 0.65;
+}
+
+.label {
+  font: inherit;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
