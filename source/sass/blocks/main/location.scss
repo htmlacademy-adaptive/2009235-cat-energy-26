@@ -3,7 +3,11 @@
 
 .location {
   position: relative;
-  background-color: variables.$white;
+  background-color: variables.$basic-gray;
+
+  &--index {
+    background-color: variables.$white;
+  }
 
   @include mixins.desktop {
     & .page__container {

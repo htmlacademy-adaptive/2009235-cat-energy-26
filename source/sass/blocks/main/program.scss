@@ -1,7 +1,6 @@
 @use "../../libs/variables.scss";
 @use "../../libs/mixins.scss";
 
-
 .program__container {
   @include mixins.mobile {
     margin-top: 27px;
@@ -33,5 +32,21 @@
 
   @include mixins.desktop {
     margin-bottom: 56px;
+  }
+}
+
+.program__paragraph {
+  @include mixins.mobile {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 39px;
+    max-width: 226px;
+  }
+
+  @include mixins.tablet {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+    max-width: 323px;
   }
 }
