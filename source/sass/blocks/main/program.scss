@@ -3,18 +3,18 @@
 
 .program__container {
   @include mixins.mobile {
-    margin-top: 27px;
-    margin-bottom: 32px;
+    padding-top: 27px;
+    padding-bottom: 32px;
   }
 
   @include mixins.tablet {
-    margin-top: 34px;
-    margin-bottom: 72px;
+    padding-top: 34px;
+    padding-bottom: 72px;
   }
 
   @include mixins.desktop {
-    margin-top: 43px;
-    margin-bottom: 82px;
+    padding-top: 43px;
+    padding-bottom: 82px;
   }
 }
 
