@@ -1,6 +1,10 @@
 @use "../../libs/variables.scss";
 @use "../../libs/mixins.scss";
 
+.program {
+  overflow-x: hidden;
+}
+
 .program__container {
   @include mixins.mobile {
     padding-top: 27px;
@@ -28,10 +32,12 @@
 
   @include mixins.tablet {
     margin-bottom: 54px;
+    margin-left: 40px;
   }
 
   @include mixins.desktop {
     margin-bottom: 56px;
+    margin-left: 0;
   }
 }
 
@@ -48,5 +54,10 @@
     line-height: 30px;
     margin-bottom: 66px;
     max-width: 323px;
+    margin-left: 40px;
+  }
+
+  @include mixins.desktop {
+    margin-left: 0;
   }
 }

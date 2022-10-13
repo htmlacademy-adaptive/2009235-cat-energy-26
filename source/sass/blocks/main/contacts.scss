@@ -42,10 +42,6 @@
   @include mixins.mobile {
     font-size: 14px;
     line-height: 20px;
-
-    /*br {
-      display: none;
-    }*/
   }
 
   @include mixins.tablet {

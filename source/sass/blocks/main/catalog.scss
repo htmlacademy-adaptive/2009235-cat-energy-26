@@ -1,0 +1,36 @@
+@use "../../libs/variables.scss";
+@use "../../libs/mixins.scss";
+
+.catalog__container {
+  @include mixins.mobile {
+    padding-top: 27px;
+    padding-bottom: 25px;
+  }
+
+  @include mixins.tablet {
+    padding-top: 34px;
+    padding-bottom: 68px;
+  }
+
+  @include mixins.desktop {
+    padding-top: 44px;
+    padding-bottom: 76px;
+  }
+}
+
+.catalog__title {
+  @include mixins.header-2;
+
+  @include mixins.mobile {
+    line-height: 36px;
+    margin-bottom: 41px;
+  }
+
+  @include mixins.tablet {
+    margin-bottom: 82px;
+  }
+
+  @include mixins.desktop {
+    margin-bottom: 84px;
+  }
+}

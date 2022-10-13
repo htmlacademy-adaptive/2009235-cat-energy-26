@@ -102,3 +102,43 @@
     min-height: 400px;
   }
 }
+
+@mixin title {
+  padding: 0;
+  margin: 0;
+  background-color: variables.$white;
+  padding-right: 20px;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: variables.$basic-green;
+    z-index: -1;
+    top: 16px;
+
+    @include tablet {
+      width: 100vw;
+      top: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @include desktop {
+      width: 120%;
+    }
+  }
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 40px;
+    margin-left: -40px;
+  }
+}

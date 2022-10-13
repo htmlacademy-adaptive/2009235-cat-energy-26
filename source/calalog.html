@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Кэт энерджи</title>
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldmedium.woff" type="font/woff" as="font" crossorigin="anonymous">
+
+    <meta name="keywords" content="HTML Academy, Кэт энерджи, Cat energy">
+    <meta name="description" content="Главная страница проекта">
+  </head>
+
+  <body class="page__body">
+    <header class="header">
+      <div class="page__container header__container">
+        <a class="header__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img class="header__logo-image" src="img/logotype-mobile.svg" width="34" height="38" alt="Магазин «Кэт энерджи».">
+          </picture>
+
+          <svg class="header__logo-title" width="101" height="18" role="img" aria-label="Cat energy.">
+            <use href="img/sprite.svg#logo-title"></use>
+          </svg>
+        </a>
+
+        <nav class="main-nav main-nav--no-js">
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+            <span class="visually-hidden">Открыть или закрыть навигационное меню</span>
+          </button>
+
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a href="calalog.html">Каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1 class="visually-hidden">Каталог «Кэт энерджи»</h1>
+      
+      <section class="catalog">
+        <div class="page__container catalog__container">
+          <h2 class="catalog__title">Каталог продукции</h2>
+
+          
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="page__container catalog__container">
+          <h2 class="catalog__title">Дополнительные товары</h2>
+          <ul>
+            <li></li>
+          </ul>
+          
+        </div>
+      </section>
+    </main>
+
+    <section class="location">
+      <h2 class="visually-hidden">Мы на карте</h2>
+
+      <div class="page__container">
+        <div class="location__contacts contacts">
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address">
+            <p class="contacts__address-paragraph">ул. Большая<br> Конюшенная, д. 19/8</p>
+            <p class="contacts__address-paragraph">Санкт-Петербург</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="location__map map">
+        <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+          <img class="map__image" src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" alt="Расположение на карте.">
+        </picture>
+
+        <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3997.2069332910687!2d30.31865930159878!3d59.93872180150663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!3m2!1d59.9387165!2d30.3230474!5e0!3m2!1sru!2sru!4v1664527041191!5m2!1sru!2sru" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="page__container footer__container">
+        <a class="footer__logo logo" href="#">
+          <svg class="footer__logo-title" width="128" height="24" role="img" aria-label="Cat energy.">
+            <use href="img/sprite.svg#logo-title"></use>
+          </svg>
+        </a>
+
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg aria-hidden="true" focusable="false" width="27" height="17">
+                  <use href="img/sprite.svg#vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ютуб</span>
+                <svg aria-hidden="true" focusable="false" width="24" height="19">
+                  <use href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграм</span>
+                <svg aria-hidden="true" focusable="false" width="20" height="18">
+                  <use href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Разработано в</span>
+            <span>HTML Academy</span>
+            <svg class="copyright__link-icon" width="27" height="34">
+              <use href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

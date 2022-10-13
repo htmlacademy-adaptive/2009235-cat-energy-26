@@ -62,6 +62,36 @@ button.button {
     max-width: 458px;
     align-self: center;
   }
+
+  &--catalog {
+    @include mixins.mobile {
+      min-height: 40px;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @include mixins.tablet {
+      min-height: 40px;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &--show-all {
+    background-color: variables.$basic-gray;
+    color: variables.$special-grey-dark;
+
+    &:hover {
+      background-color: variables.$special-grey-lightnes;
+    }
+
+    &:active {
+      background-color: variables.$special-grey-lightnes;
+      color: rgba(variables.$special-grey-dark, 0.3);
+    }
+  }
 }
 
 a.button:not([href]) {

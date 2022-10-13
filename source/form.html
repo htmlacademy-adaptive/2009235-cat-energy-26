@@ -58,8 +58,6 @@
     </header>
 
     <main class="main">
-      <h1 class="visually-hidden">Подбор программы</h1>
-
       <section class="program">
         <div class="page__container program__container">
           <h1 class="program__title">Подбор программы</h1>
@@ -81,13 +79,13 @@
 
               <div class="form__group-wrapper">
                 <label class="form__label" for="cat-age">Возраст (лет):</label>
-                <input class="input input--num form__name" type="number" id="age" name="age" placeholder="7" autocomplete="off" min="0">
+                <input class="input input--num form__name" type="number" id="cat-age" name="age" placeholder="7" autocomplete="off" min="0">
               </div>
             </fieldset>
 
             <fieldset class="form__group form__group--program">
               <legend class="visually-hidden">Тип программы</legend>
-              <ul class="form__group-list">
+              <ul class="form__group-list form__group-list--program">
                 <li class="form__group-item">
                   <label class="form__control">
                     <input class="visually-hidden form__control-input" type="radio" name="fit-program" value="weight_loss" checked>
@@ -118,23 +116,33 @@
               <legend class="form__title">Контактные данные (владельца кота)</legend>
               <div class="form__group-wrapper">
                 <label class="form__label" for="owner-email">E-mail:*</label>
-                <input class="input form__email" type="email" id="owner-email" name="e-mail" placeholder="кuklachev@gmail.com" autocomplete="off" required>
+                <div class="form__input-with-icon">
+                  <input class="input form__email" type="email" id="owner-email" name="e-mail" placeholder="кuklachev@gmail.com" autocomplete="off" required>
+                  <svg aria-hidden="true" focusable="false" width="19" height="14">
+                    <use href="img/sprite.svg#icon-email"></use>
+                  </svg>
+                </div>
               </div>
 
               <div class="form__group-wrapper">
-                <label class="form__label" for="owner-weight">Телефон:*</label>
-                <input class="input form__telephone" type="tel" id="owner-telephone" name="telephone" placeholder="8 (960) 900-60-90" pattern="8 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                <label class="form__label" for="owner-telephone">Телефон:*</label>
+                <div class="form__input-with-icon">
+                  <input class="input form__telephone" type="tel" id="owner-telephone" name="telephone" placeholder="8 (960) 900-60-90" pattern="\8\ ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" autocomplete="off" required>
+                  <svg aria-hidden="true" focusable="false" width="20" height="21">
+                    <use href="img/sprite.svg#icon-telephone"></use>
+                  </svg>
+                </div>
               </div>
             </fieldset>
 
             <fieldset class="form__group form__group--owner-comment">
               <legend class="form__title">Комментарий</legend>
-              <textarea class="input" rows="5" id="user-message" name="message" placeholder="Расскажите обо всех повадках кота" autocomplete="off"></textarea>
+              <textarea class="input input--textarea form__textarea" rows="3" id="user-message" name="message" placeholder="Расскажите обо всех повадках кота" autocomplete="off"></textarea>
             </fieldset>
 
             <fieldset class="form__group form__group--additionally">
               <legend class="form__title">Дополнительно</legend>
-              <ul class="form__group-list">
+              <ul class="form__group-list form__group-list--additionally">
                 <li class="form__group-item">
                   <label class="form__control">
                     <input class="visually-hidden form__control-input" type="checkbox" name="sweetener" checked>
