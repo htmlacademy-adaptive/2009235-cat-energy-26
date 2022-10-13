@@ -120,10 +120,6 @@
   @include mixins.desktop {
     grid-column: 1 / -1;
     margin: 0;
-
-    & .form__title {
-      margin-bottom: 57px;
-    }
   }
 }
 
@@ -150,11 +146,26 @@
 
   @include mixins.mobile {
     max-width: 75%;
-    margin-bottom: 35px;
+
+    &--owner-contacts {
+      margin-bottom: 35px;
+    }
+
+    &--owner-comment {
+      margin-bottom: 37px;
+    }
+
+    &--additionally {
+      margin-bottom: 34px;
+    }
   }
 
   @include mixins.tablet {
     margin-bottom: 76px;
+
+    &--additionally {
+      margin-bottom: 57px;
+    }
   }
 }
 
