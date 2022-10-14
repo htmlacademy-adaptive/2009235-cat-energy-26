@@ -4,6 +4,10 @@
 .header {
   background-color: variables.$white;
 
+  @include mixins.mobile {
+    min-height: 65px;
+  }
+
   @include mixins.desktop {
     background-color: transparent;
   }
