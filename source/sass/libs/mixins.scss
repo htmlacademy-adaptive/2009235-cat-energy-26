@@ -104,6 +104,8 @@
 }
 
 @mixin title {
+  font: inherit;
+  font-weight: 400;
   padding: 0;
   margin: 0;
   background-color: variables.$white;
@@ -142,6 +144,9 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px;
+  }
+
+  @include desktop {
     margin-left: -40px;
   }
 }

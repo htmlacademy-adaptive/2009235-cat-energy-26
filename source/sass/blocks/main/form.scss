@@ -162,6 +162,7 @@
 
   @include mixins.tablet {
     margin-bottom: 76px;
+    margin-left: -40px;
 
     &--additionally {
       margin-bottom: 57px;
