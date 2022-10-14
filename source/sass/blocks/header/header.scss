@@ -3,10 +3,28 @@
 
 .header {
   background-color: variables.$white;
-  z-index: 2;
 
   @include mixins.desktop {
     background-color: transparent;
+  }
+}
+
+.header--index {
+  @include mixins.desktop {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      display: block;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 100%;
+      background-color: #65a83e;
+    }
   }
 }
 

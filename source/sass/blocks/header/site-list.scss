@@ -32,6 +32,10 @@
       content: "";
     }
   }
+
+  @include mixins.desktop {
+    z-index: 4;
+  }
 }
 
 .site-list__item a {
