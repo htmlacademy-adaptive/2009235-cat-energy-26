@@ -63,6 +63,37 @@
       <section class="catalog">
         <div class="page__container catalog__container">
           <h2 class="catalog__title">Каталог продукции</h2>
+
+          <ul class="catalog__list">
+            <li class="catalog__card">
+              <picture class="catalog__card-image-wrapper">
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/products/product-1-pro-500-desktop@1x.webp 1x, img/products/product-1-pro-500-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/products/product-1-pro-500-tablet@1x.webp 1x, img/products/product-1-pro-500-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/products/product-1-pro-500-mobile@1x.webp 1x, img/products/product-1-pro-500-mobile@2x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="img/products/product-1-pro-500-desktop@1x.png 1x, img/products/product-1-pro-500-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/products/product-1-pro-500-tablet@1x.png 1x, img/products/product-1-pro-500-tablet@2x.png 2x">
+                <img class="catalog__card-image catalog__card-image--500" src="img/products/product-1-pro-500-mobile@1x.png" srcset="img/products/product-1-pro-500-mobile@2x.png 2x" alt="Фото продукта.">
+              </picture>
+            
+              <h3 class="catalog__card-title">Cat Energy <span>PRO 500&nbsp;г</span></h3>
+              <dl class="catalog__card-characteristics">
+                <div>
+                  <dt>Масса</dt>
+                  <dd>500&nbsp;г</dd>
+                </div>
+                <div>
+                  <dt>Вкус</dt>
+                  <dd>Курица</dd>
+                </div>
+                <div>
+                  <dt>Цена</dt>
+                  <dd>700&nbsp;Р.</dd>
+                </div>
+              </dl>
+              <a class="catalog__card-button button button--catalog" href="#">Заказать</button>
+            </li>
+          </ul>
+
         </div>
       </section>
 
@@ -76,7 +107,7 @@
                 <dt>1 упаковка (100&nbsp;г)</dt>
                 <dd>200&nbsp;Р.</dd>
               </dl>
-              <button class="accompaniment__button button button--catalog" type="button">Заказать</button>
+              <a class="accompaniment__button button button--catalog" href="#">Заказать</a>
             </li>
             <li class="accompaniment__item">
               <h3 class="accompaniment__item-title">Питьевая вода</h3>
@@ -84,7 +115,7 @@
                 <dt>5 литров</dt>
                 <dd>50&nbsp;Р.</dd>
               </dl>
-              <button class="accompaniment__button button button--catalog" type="button">Заказать</button>
+              <a class="accompaniment__button button button--catalog" href="#">Заказать</a>
             </li>
             <li class="accompaniment__item">
               <h3 class="accompaniment__item-title">Молоко</h3>
@@ -92,7 +123,7 @@
                 <dt>1 литр</dt>
                 <dd>100&nbsp;Р.</dd>
               </dl>
-              <button class="accompaniment__button button button--catalog" type="button">Заказать</button>
+              <a class="accompaniment__button button button--catalog" href="#">Заказать</a>
             </li>
             <li class="accompaniment__item">
               <h3 class="accompaniment__item-title">Витамины</h3>
@@ -100,7 +131,7 @@
                 <dt>1 упаковка (30&nbsp;г)</dt>
                 <dd>300&nbsp;Р.</dd>
               </dl>
-              <button class="accompaniment__button button button--catalog" type="button">Заказать</button>
+              <a class="accompaniment__button button button--catalog" href="#">Заказать</a>
             </li>
           </ul>
 
