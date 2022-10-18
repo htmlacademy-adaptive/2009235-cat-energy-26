@@ -127,17 +127,26 @@
   margin: 0 auto;
   max-height: 100%;
   max-width: 100%;
+  width: auto;
 
   &--500 {
     @include mixins.mobile {
       margin-top: 2px;
       align-self: center;
     }
+
+    @include mixins.tablet {
+      height: 172px;
+    }
   }
 
   &--1000 {
     @include mixins.mobile {
       align-self: flex-end;
+    }
+
+    @include mixins.tablet {
+      height: 200px;
     }
   }
 
