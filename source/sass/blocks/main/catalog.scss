@@ -99,7 +99,7 @@
 
   &--1000 {
     @include mixins.mobile {
-      align-self: flex-end
+      align-self: flex-end;
     }
   }
 }
@@ -122,7 +122,7 @@
 }
 
 .catalog__card-characteristics {
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   color: variables.$special-grey-dark;
   display: flex;
