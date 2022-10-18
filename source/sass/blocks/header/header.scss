@@ -17,8 +17,7 @@
   @include mixins.desktop {
     position: relative;
 
-    &::before,
-    &::after {
+    &::before {
       content: "";
       position: absolute;
       z-index: -1;
@@ -68,6 +67,13 @@
   @include mixins.mobile {
     padding-top: 10px;
     padding-bottom: 12px;
+  }
+}
+
+.header__logo--index {
+  @include mixins.desktop {
+    position: relative;
+    z-index: 4;
   }
 }
 
