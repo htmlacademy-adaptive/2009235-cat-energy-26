@@ -14,7 +14,7 @@
 
   @include mixins.desktop {
     padding-top: 44px;
-    padding-bottom: 76px;
+    padding-bottom: 38px;
   }
 }
 
@@ -48,6 +48,7 @@
 
   @include mixins.desktop {
     column-gap: 80px;
+    row-gap: 63px;
   }
 }
 
@@ -93,6 +94,12 @@
     margin-top: 81px;
   }
 
+  @include mixins.desktop {
+    padding-left: 40px;
+    padding-right: 36px;
+    padding-bottom: 40px;
+  }
+
   &--show-more {
     @include mixins.mobile {
       display: flex;
@@ -103,6 +110,19 @@
     @include mixins.tablet {
       background-color: variables.$white;
       border: 2px solid variables.$basic-gray;
+      padding-top: 50px;
+    }
+
+    @include mixins.desktop {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+  }
+
+  &--show-more .button {
+    @include mixins.desktop {
+      margin: 0;
+      margin-top: auto;
     }
   }
 }
@@ -120,6 +140,12 @@
     margin-bottom: 34px;
     margin-top: -118px;
   }
+
+  @include mixins.desktop {
+    height: 197px;
+    margin-bottom: 46px;
+    margin-top: -119px;
+  }
 }
 
 .catalog__card-image {
@@ -133,20 +159,30 @@
     @include mixins.mobile {
       margin-top: 2px;
       align-self: center;
+      height: 84px;
     }
 
     @include mixins.tablet {
       height: 172px;
+    }
+
+    @include mixins.desktop {
+      height: 173px;
     }
   }
 
   &--1000 {
     @include mixins.mobile {
       align-self: flex-end;
+      height: 100px;
     }
 
     @include mixins.tablet {
       height: 200px;
+    }
+
+    @include mixins.desktop {
+      height: 196px;
     }
   }
 
@@ -182,6 +218,7 @@
 
     @include mixins.tablet {
       margin-bottom: 23px;
+      padding: 0;
     }
   }
 }
@@ -229,6 +266,11 @@
   @include mixins.tablet {
     margin-top: auto;
   }
+
+  @include mixins.desktop {
+    margin-left: -1px;
+    margin-right: 2px;
+  }
 }
 
 .catalog__card-plus {
@@ -265,9 +307,9 @@
 
 .catalog__card-paragraph {
   font-family: "Arial", sans-serif;
-  margin: 0;
   color: variables.$special-grey-dark;
   text-align: center;
+  margin: 0 auto;
 
   @include mixins.mobile {
     font-size: 12px;
@@ -278,11 +320,7 @@
   @include mixins.tablet {
     font-size: 16px;
     line-height: 18px;
-    max-width: 100%;
+    max-width: 167px;
     margin-bottom: 33px;
   }
-
-  /*& br {
-    content: " ";
-  }*/
 }
