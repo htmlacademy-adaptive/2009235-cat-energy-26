@@ -70,7 +70,8 @@
   }
 
   &:focus:invalid,
-  &--invalid {
+  &--invalid,
+  &--invalid:hover {
     border: 2px solid variables.$special-error;
 
     @include mixins.mobile {

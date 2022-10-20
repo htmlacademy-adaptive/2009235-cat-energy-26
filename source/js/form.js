@@ -12,3 +12,11 @@ button_submit.addEventListener('click', () => {
     }
   })
 });
+
+input_required.forEach((input) => {
+  input.addEventListener('change', () => {
+    if (input.validity.valid) {
+      input.classList.remove('input--invalid');
+    }
+  })
+});
