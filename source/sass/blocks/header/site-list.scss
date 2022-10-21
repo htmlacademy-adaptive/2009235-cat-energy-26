@@ -35,6 +35,10 @@
 
   @include mixins.desktop {
     z-index: 4;
+
+    &--active a::before {
+      bottom: 6px;
+    }
   }
 }
 
@@ -77,6 +81,11 @@
     &:active {
       opacity: 0.3;
     }
+  }
+
+  @include mixins.tablet {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

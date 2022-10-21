@@ -14,7 +14,7 @@
 
   @include mixins.desktop {
     margin-top: 71px;
-    margin-bottom: 69px;
+    margin-bottom: 61px;
   }
 }
 
@@ -89,6 +89,11 @@
     align-content: start;
   }
 
+  @include mixins.desktop {
+    gap: 32px;
+    padding-top: 32px;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -118,14 +123,15 @@
 
   &--cutlery::before {
     background-image: url("../img/work-cutlery.svg");
+    background-size: auto 53%;
   }
 
   &--watch::before {
     background-image: url("../img/work-watch.svg");
   }
 
-  @include mixins.tablet {
-    &::after {
+  &::after {
+    @include mixins.tablet {
       counter-increment: work-counter;
       content: counter(work-counter);
       font-size: 280px;
@@ -136,6 +142,10 @@
       right: 0;
       top: 0;
       z-index: -1;
+    }
+
+    @include mixins.desktop {
+      top: -7px;
     }
   }
 }

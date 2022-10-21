@@ -173,7 +173,7 @@
   }
 
   @include mixins.desktop {
-    margin-top: 55px;
+    margin-top: 46px;
     text-align: left;
     display: block;
 
@@ -201,6 +201,6 @@
   @include mixins.desktop {
     margin-top: 0;
     grid-column: 2 / -1;
-    grid-row: 1 / 4;
+    grid-row: 1 / 5;
   }
 }

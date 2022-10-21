@@ -13,7 +13,7 @@
   }
 
   @include mixins.desktop {
-    margin-top: 80px;
+    margin-top: 82px;
     margin-bottom: 71px;
   }
 }
@@ -83,7 +83,7 @@
   }
 
   @include mixins.desktop {
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     gap: 62px;
   }
 }
@@ -127,7 +127,7 @@
 
   &--slim::before {
     background-image: url("../img/fit-cat-slim.svg");
-    transform: translate(-50%, -59%);
+    transform: translate(-50%, -58%) scale(0.98);
   }
 
   &--pro::before {
@@ -177,7 +177,7 @@
   }
 
   @include mixins.desktop {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
   }
 }
 
@@ -242,6 +242,6 @@
   @include mixins.tablet {
     font-size: 20px;
     line-height: 30px;
-    padding-right: 57px;
+    padding-right: 60px;
   }
 }

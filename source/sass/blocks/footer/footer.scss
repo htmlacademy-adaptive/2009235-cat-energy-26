@@ -43,6 +43,11 @@
     border-top: 1px solid variables.$special-grey2;
     border-bottom: 1px solid variables.$special-grey2;
   }
+
+  @include mixins.desktop {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 .footer__copyright {
@@ -52,5 +57,9 @@
 
   @include mixins.tablet {
     justify-self: end;
+  }
+
+  @include mixins.desktop {
+    margin-top: 2px;
   }
 }

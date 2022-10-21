@@ -24,7 +24,7 @@
 
   @include mixins.desktop {
     padding-top: 223px;
-    padding-left: 90px;
+    padding-left: 80px;
     padding-bottom: 185px;
   }
 }
@@ -79,6 +79,11 @@
     position: relative;
     z-index: 2;
   }
+
+  @include mixins.desktop {
+    height: 54px;
+    width: 244px;
+  }
 }
 
 .introduction__product-image {
@@ -102,7 +107,7 @@
     position: absolute;
     min-width: auto;
     min-height: auto;
-    top: 220px;
+    top: 216px;
     left: 50%;
     transform: translateX(-107px);
   }

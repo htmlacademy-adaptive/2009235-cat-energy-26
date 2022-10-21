@@ -35,4 +35,8 @@
   @include mixins.tablet {
     margin-left: 22px;
   }
+
+  @include mixins.desktop {
+    margin-left: 19px;
+  }
 }
