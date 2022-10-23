@@ -44,6 +44,10 @@
     border-bottom: 1px solid variables.$special-grey2;
   }
 
+  @include mixins.tablet {
+    margin-right: 8px;
+  }
+
   @include mixins.desktop {
     margin-right: 5px;
     margin-bottom: 5px;

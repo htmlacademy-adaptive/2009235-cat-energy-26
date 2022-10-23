@@ -3,8 +3,8 @@
 
 .work {
   @include mixins.mobile {
-    margin-top: 43px;
-    margin-bottom: 26px;
+    margin-top: 21px;
+    margin-bottom: 48px;
   }
 
   @include mixins.tablet {
@@ -20,7 +20,7 @@
 
 .work__container {
   @include mixins.tablet {
-    padding-bottom: 47px;
+    padding-bottom: 46px;
     border-bottom: 1px solid variables.$special-grey;
   }
 
@@ -59,9 +59,9 @@
 
   @include mixins.tablet {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 153px;
+    column-gap: 135px;
     row-gap: 37px;
-    margin-right: 50px;
+    margin-right: 75px;
   }
 
   @include mixins.desktop {
@@ -154,4 +154,10 @@
   @include mixins.paragraph;
   color: variables.$special-grey-dark;
   align-self: center;
+
+  @include mixins.mobile {
+    & br {
+      display: none;
+    }
+  }
 }

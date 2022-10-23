@@ -18,8 +18,8 @@
   }
 
   @include mixins.tablet {
-    padding-top: 32px;
-    padding-left: 90px;
+    padding-top: 29px;
+    padding-left: 117px;
   }
 
   @include mixins.desktop {
@@ -52,7 +52,7 @@
     font-size: 14px;
     line-height: 14px;
     margin-top: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 
   @include mixins.tablet {
@@ -73,16 +73,21 @@
   @include mixins.mobile {
     order: 3;
     margin-top: 3px;
+    height: 40px;
   }
 
   @include mixins.tablet {
     position: relative;
     z-index: 2;
+    height: 54px;
+    width: 244px;
+    margin-left: 3px;
   }
 
   @include mixins.desktop {
     height: 54px;
     width: 244px;
+    margin: 0;
   }
 }
 
@@ -96,20 +101,20 @@
   }
 
   @include mixins.tablet {
-    min-width: 673px;
+    min-width: 708px;
     min-height: 609px;
     margin: 0;
-    margin-left: -55px;
-    margin-top: -75px;
+    margin-left: -87px;
+    margin-top: -83px;
   }
 
   @include mixins.desktop {
     position: absolute;
     min-width: auto;
     min-height: auto;
-    top: 216px;
+    top: 224px;
     left: 50%;
-    transform: translateX(-107px);
+    transform: translateX(-75px);
   }
 }
 

@@ -68,6 +68,14 @@
     padding-top: 10px;
     padding-bottom: 12px;
   }
+
+  @include mixins.tablet {
+    margin-top: -3px;
+  }
+
+  @include mixins.desktop {
+    margin-top: 0;
+  }
 }
 
 .header__logo--index {
@@ -102,19 +110,21 @@
   @include mixins.mobile {
     position: absolute;
     margin: 0 auto;
+    width: 107px;
+    height: auto;
     right: 0;
     left: 0;
     top: 23px;
   }
 
   @include mixins.tablet {
-    margin-left: 12px;
+    margin-left: 10px;
+    width: 107px;
+    height: auto;
     color: variables.$special-grey-dark;
   }
 
   @include mixins.desktop {
     width: 124px;
-    height: auto;
-    margin-left: 10px;
   }
 }
