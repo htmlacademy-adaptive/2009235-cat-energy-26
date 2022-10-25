@@ -34,6 +34,10 @@
 
 .contacts__address {
   font-style: normal;
+
+  @include mixins.desktop {
+    margin-top: -2px;
+  }
 }
 
 .contacts__address-paragraph {

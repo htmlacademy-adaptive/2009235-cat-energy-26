@@ -12,12 +12,12 @@
   }
 
   @include mixins.tablet {
-    padding-top: 34px;
+    padding-top: 30px;
     padding-bottom: 72px;
   }
 
   @include mixins.desktop {
-    padding-top: 43px;
+    padding-top: 40px;
     padding-bottom: 82px;
   }
 }
@@ -42,6 +42,8 @@
 }
 
 .program__paragraph {
+  text-transform: uppercase;
+
   @include mixins.mobile {
     font-size: 14px;
     line-height: 18px;

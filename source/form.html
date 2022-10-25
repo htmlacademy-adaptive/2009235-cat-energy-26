@@ -67,17 +67,17 @@
 
             <fieldset class="form__group form__group--specifications">
               <legend class="visually-hidden">Характеристики котейки</legend>
-              <div class="form__group-wrapper">
+              <div class="form__group-wrapper form__group-wrapper--name">
                 <label class="form__label" for="cat-name">Имя:*</label>
                 <input class="input form__name" type="text" id="cat-name" name="name" placeholder="Барсик" autocomplete="off" required>
               </div>
 
-              <div class="form__group-wrapper">
+              <div class="form__group-wrapper form__group-wrapper--weight">
                 <label class="form__label" for="cat-weight">Вес (кг):*</label>
                 <input class="input input--num form__weight" type="number" id="cat-weight" name="weight" placeholder="7" autocomplete="off" required min="0">
               </div>
 
-              <div class="form__group-wrapper">
+              <div class="form__group-wrapper form__group-wrapper--age">
                 <label class="form__label" for="cat-age">Возраст (лет):</label>
                 <input class="input input--num form__name" type="number" id="cat-age" name="age" placeholder="7" autocomplete="off" min="0">
               </div>
@@ -114,7 +114,7 @@
 
             <fieldset class="form__group form__group--owner-contacts">
               <span class="form__title form__title--owner-contacts">Контактные данные (владельца кота)</span>
-              <div class="form__group-wrapper">
+              <div class="form__group-wrapper form__group-wrapper--email">
                 <label class="form__label" for="owner-email">E-mail:*</label>
                 <div class="form__input-with-icon">
                   <input class="input form__email" type="email" id="owner-email" name="e-mail" placeholder="кuklachev@gmail.com" autocomplete="off" required>
@@ -124,7 +124,7 @@
                 </div>
               </div>
 
-              <div class="form__group-wrapper">
+              <div class="form__group-wrapper form__group-wrapper--telephone">
                 <label class="form__label" for="owner-telephone">Телефон:*</label>
                 <div class="form__input-with-icon">
                   <input class="input form__telephone" type="tel" id="owner-telephone" name="telephone" placeholder="8 (960) 900-60-90" pattern="8 [\(]\d{3}[\)] [0-9]{3}-[0-9]{2}-[0-9]{2}" autocomplete="off" required>
@@ -178,7 +178,7 @@
             </fieldset>
 
             <div class="form__group form__group--submit">
-              <button class="form__button button" type="submit">Подобрать программу</button>
+              <button class="form__button button" type="submit">Отправить заявку</button>
               <p class="form__paragraph">* — Обязательные поля</p>
             </div>
           </form>
@@ -191,7 +191,7 @@
 
       <div class="page__container">
         <div class="location__contacts contacts">
-          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="contacts__address">
             <p class="contacts__address-paragraph">ул. Большая<br> Конюшенная, д. 19/8</p>
             <p class="contacts__address-paragraph">Санкт-Петербург</p>
