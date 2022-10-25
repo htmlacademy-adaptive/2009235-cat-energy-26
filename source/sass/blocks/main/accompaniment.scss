@@ -9,7 +9,7 @@
   position: relative;
 
   @include mixins.mobile {
-    margin-top: 25px;
+    margin-top: 24px;
     margin-bottom: 35px;
   }
 
@@ -31,7 +31,7 @@
   @include mixins.title;
 
   @include mixins.mobile {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
   }
 
   @include mixins.tablet {
