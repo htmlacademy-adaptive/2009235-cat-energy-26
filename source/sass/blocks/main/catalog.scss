@@ -7,12 +7,12 @@
   }
 
   @include mixins.tablet {
-    padding-top: 34px;
+    padding-top: 30px;
     padding-bottom: 34px;
   }
 
   @include mixins.desktop {
-    padding-top: 44px;
+    padding-top: 41px;
     padding-bottom: 38px;
   }
 }
@@ -119,7 +119,7 @@
   }
 
   &--show-more .button {
-    @include mixins.desktop {
+    @include mixins.tablet {
       margin: 0;
       margin-top: auto;
     }
@@ -168,6 +168,7 @@
 
     @include mixins.desktop {
       height: 173px;
+      margin-bottom: -6px;
     }
   }
 
@@ -190,11 +191,21 @@
     align-self: flex-end;
   }
 
-  &--500.catalog__card-image--p1 {
+  &--500#{&}--p1 {
     @include mixins.mobile {
-      margin-top: 2px;
-      margin-bottom: auto;
-      height: 84px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &--1000#{&}--p1 {
+    @include mixins.tablet {
+      margin-bottom: -9px;
+      height: 209px;
+    }
+
+    @include mixins.desktop {
+      margin-bottom: -8px;
+      min-height: calc(100% + 5px);
     }
   }
 }
@@ -212,6 +223,17 @@
 
     & span {
       display: block;
+      margin-left: 4px;
+    }
+  }
+
+  @include mixins.desktop {
+    & span {
+      margin-left: 8px;
+    }
+
+    &--show-more span {
+      margin-left: 0;
     }
   }
 
@@ -261,6 +283,18 @@
     }
   }
 
+  & div:first-child {
+    margin-right: 2px;
+
+    @include mixins.tablet {
+      margin-right: 4px;
+    }
+
+    @include mixins.desktop {
+      margin-right: 2px;
+    }
+  }
+
   & dd {
     margin: 0;
   }
@@ -273,6 +307,8 @@
 
   @include mixins.tablet {
     margin-top: auto;
+    margin-left: 3px;
+    margin-right: 1px;
   }
 
   @include mixins.desktop {
@@ -309,7 +345,11 @@
 
   @include mixins.tablet {
     width: 60px;
-    margin-bottom: 49px;
+    margin-bottom: 48px;
+  }
+
+  @include mixins.desktop {
+    margin-bottom: 44px;
   }
 }
 

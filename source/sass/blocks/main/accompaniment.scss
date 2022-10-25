@@ -19,7 +19,7 @@
   }
 
   @include mixins.desktop {
-    margin-top: 38px;
+    margin-top: 37px;
     margin-bottom: 86px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -40,7 +40,7 @@
   }
 
   @include mixins.desktop {
-    margin-bottom: 81px;
+    margin-bottom: 79px;
     margin-left: -40px;
   }
 }
@@ -71,11 +71,11 @@
   }
 
   @include mixins.tablet {
-    padding: 25px 37px 27px 37px;
+    padding: 25px 37px 28px 37px;
     border: 1px solid variables.$special-grey-light;
     border-bottom: none;
     grid-template-columns: 1fr 1fr;
-    row-gap: 24px;
+    row-gap: 21px;
     column-gap: 60px;
     align-items: end;
   }
@@ -104,7 +104,7 @@
   @include mixins.tablet {
     line-height: 100%;
     text-align: left;
-    margin-bottom: 1px;
+    margin-bottom: 4px;
   }
 
   @include mixins.desktop {
@@ -119,6 +119,7 @@
 
   @include mixins.desktop {
     grid-column: auto;
+    margin-left: 1px;
   }
 }
 
@@ -141,6 +142,7 @@
     line-height: 20px;
     text-align: left;
     grid-template-columns: auto 84px;
+    margin-top: 4px;
 
     & > * {
       text-align: right;
@@ -150,6 +152,7 @@
   @include mixins.desktop {
     grid-template-columns: auto 70px;
     margin-right: -70px;
+    margin-top: 6px;
 
     & > * {
       text-align: left;
@@ -201,8 +204,8 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 63px 124px 69px 88px;
-    margin-top: 69px;
+    padding: 65px 124px 69px 88px;
+    margin-top: 68px;
     background-image: url("../img/pesent-back-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -219,6 +222,7 @@
     margin: 0;
     background-image: url("../img/pesent-back@1x.jpg");
     min-height: 288px;
+    background-position: center right;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/pesent-back@2x.jpg");
@@ -233,8 +237,13 @@
   }
 
   @include mixins.tablet {
-    width: 58px;
-    height: 62px;
+    width: 60px;
+    height: 63px;
+  }
+
+  @include mixins.desktop {
+    width: 61px;
+    height: 64px;
   }
 }
 
