@@ -150,7 +150,6 @@
   }
 }
 
-
 .form__title {
   @include mixins.title;
 
@@ -196,7 +195,7 @@
     &--name {
       gap: 13px;
     }
-    
+
     &--weight {
       gap: 16px;
     }
@@ -216,10 +215,10 @@
     &--email {
       gap: 22px;
     }
-    
+
     &--telephone {
       gap: 15px;
-    }    
+    }
   }
 
   @include mixins.desktop {
@@ -228,7 +227,7 @@
     &--name {
       gap: 17px;
     }
-    
+
     &--weight {
       gap: 20px;
     }
@@ -240,10 +239,10 @@
     &--email {
       gap: 22px;
     }
-    
+
     &--telephone {
       gap: 15px;
-    }  
+    }
   }
 }
 
