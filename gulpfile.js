@@ -12,6 +12,7 @@ import squoosh from 'gulp-libsquoosh';
 import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
+import concat from 'gulp-concat';
 
 const styles2 = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
@@ -48,6 +49,7 @@ const html = () => {
 //Scripts
 const scripts = () => {
   return gulp.src('source/js/*.js')
+    .pipe(concat('scripts.js')) //in one file
     .pipe(terser())
     .pipe(rename({
       suffix: ".min"
