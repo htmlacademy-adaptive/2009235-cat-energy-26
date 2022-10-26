@@ -135,7 +135,7 @@
 
   @include mixins.mobile {
     line-height: 100%;
-    grid-template-columns: auto max-content;
+    grid-template-columns: auto min-content;
   }
 
   @include mixins.tablet {

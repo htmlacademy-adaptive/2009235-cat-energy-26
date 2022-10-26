@@ -110,8 +110,7 @@
     text-align: center;
     text-transform: uppercase;
     overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
+    hyphens: auto;
 
     @include mixins.mobile {
       font-size: 24px;
