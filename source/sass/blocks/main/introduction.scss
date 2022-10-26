@@ -73,19 +73,18 @@
   @include mixins.mobile {
     order: 3;
     margin-top: 3px;
-    height: 40px;
+    min-height: 40px;
   }
 
   @include mixins.tablet {
     position: relative;
     z-index: 2;
-    height: 54px;
+    min-height: 54px;
     width: 244px;
     margin-left: 3px;
   }
 
   @include mixins.desktop {
-    height: 54px;
     width: 244px;
     margin: 0;
   }

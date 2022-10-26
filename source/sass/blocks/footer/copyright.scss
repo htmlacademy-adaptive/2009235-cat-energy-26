@@ -27,6 +27,7 @@
 .copyright__link-icon {
   vertical-align: middle;
   color: variables.$special-grey-medium;
+  flex-shrink: 0;
 
   @include mixins.mobile {
     margin-left: auto;

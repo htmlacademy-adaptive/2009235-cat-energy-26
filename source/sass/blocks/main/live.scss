@@ -109,6 +109,9 @@
     margin: 0;
     text-align: center;
     text-transform: uppercase;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
 
     @include mixins.mobile {
       font-size: 24px;
