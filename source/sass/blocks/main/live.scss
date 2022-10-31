@@ -100,7 +100,7 @@
 
 .live__characteristic {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column-reverse;
 
   & dd {
@@ -117,6 +117,7 @@
       line-height: 24px;
       padding: 14px 18px;
       padding-bottom: 17px;
+      clip-path: polygon(0% 0%, 0% 100%, 18px 100%, 18px 98%, calc(100% - 18px) 98%, calc(100% - 18px) 100%, 100% 100%, 100% 0%);
     }
 
     @include mixins.tablet {
@@ -124,6 +125,7 @@
       line-height: 37px;
       padding: 14px 24px;
       padding-bottom: 19px;
+      clip-path: polygon(0% 0%, 0% 100%, 9px 100%, 9px 98%, calc(100% - 9px) 98%, calc(100% - 9px) 100%, 100% 100%, 100% 0%);
     }
   }
 
@@ -139,7 +141,6 @@
     @include mixins.mobile {
       font-size: 12px;
       line-height: 100%;
-      background-color: variables.$special-grey;
       width: calc(100% - 18px * 2);
       top: -10px;
       padding: 0 9px;
@@ -148,15 +149,22 @@
     @include mixins.tablet {
       font-size: 14px;
       line-height: 14px;
-      background-color: variables.$white;
       width: max-content;
       max-width: 95%;
       top: -7px;
       padding: 0 9px;
     }
+  }
+}
 
-    @include mixins.desktop {
-      background-color: variables.$special-grey;
+.live__characteristic:first-child {
+  @include mixins.tablet {
+    & dd {
+      clip-path: polygon(0% 0%, 0% 100%, 24px 100%, 24px 98%, calc(100% - 24px) 98%, calc(100% - 24px) 100%, 100% 100%, 100% 0%);
+    }
+
+    & dt {
+      max-width: 72%;
     }
   }
 }
