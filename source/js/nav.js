@@ -12,9 +12,10 @@
     if (main_menu.classList.contains('main-nav__wrapper--opened')) {
       main_menu.classList.remove('main-nav__wrapper--closed');
       }
-      else {
-        main_menu.classList.add('main-nav__wrapper--closed');
-      }
+
+    else {
+      main_menu.classList.add('main-nav__wrapper--closed');
+    }
 
     main_button.classList.toggle('main-nav__toggle--closed');
     main_button.classList.toggle('main-nav__toggle--opened');
