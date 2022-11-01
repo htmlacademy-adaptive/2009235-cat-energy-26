@@ -64,7 +64,7 @@ const scripts = () => {
 
 //Images@2x
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*'])
     .pipe(rename({
       suffix: "@2x"
     }))
@@ -122,6 +122,7 @@ const copy = (done) => {
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
     'source/manifest.webmanifest',
+    'source/img/favicons/*',
 ], {
   base:'source'
 })
