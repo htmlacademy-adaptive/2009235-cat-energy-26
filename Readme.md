@@ -1,7 +1,9 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [PolinaT](https://up.htmlacademy.ru/adaptive/26/user/2009235).
-* Наставник: `Неизвестно`.
+* Наставник: [Борис Слонов](https://htmlacademy.ru/profile/id1130303).
+
+_Ссылка на страницу поекта: https://timonp.github.io/2009235-cat-energy-26/
 
 ---
 
