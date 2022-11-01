@@ -13,6 +13,7 @@ import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import concat from 'gulp-concat';
+import fileinclude from 'gulp-file-include';
 
 const styles2 = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
@@ -42,6 +43,10 @@ const styles = () => {
 // HTML
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }

@@ -21,41 +21,7 @@
   </head>
 
   <body class="page__body">
-    <header class="header header--index">
-      <div class="page__container header__container header__container--index">
-        <a class="header__logo header__logo--index logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/logotype-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-            <img class="header__logo-image" src="img/logotype-mobile.svg" width="34" height="38" alt="Магазин «Кэт энерджи».">
-          </picture>
-
-          <svg class="header__logo-title" width="101" height="18" role="img" aria-label="Cat energy.">
-            <use href="img/sprite.svg#logo-title"></use>
-          </svg>
-        </a>
-
-        <nav class="main-nav main-nav--no-js">
-          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
-            <span class="visually-hidden">Открыть или закрыть навигационное меню</span>
-          </button>
-
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list site-list--index">
-              <li class="site-list__item site-list__item--active">
-                <a href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a href="calalog.html">Каталог продукции</a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+    @@include('./html/header.html')
 
     <main class="main">
       <h1 class="visually-hidden">Главная страница</h1>
@@ -164,84 +130,10 @@
         </div>
       </section>
 
-      <section class="location location--index">
-        <h2 class="visually-hidden">Мы на карте</h2>
-
-        <div class="page__container">
-          <div class="location__contacts contacts">
-            <p class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-            <address class="contacts__address">
-              <p class="contacts__address-paragraph">ул. Большая<br> Конюшенная, д. 19/8</p>
-              <p class="contacts__address-paragraph">Санкт-Петербург</p>
-            </address>
-          </div>
-        </div>
-
-        <div class="location__map map">
-          <picture>
-            <source type="image/webp" media="(min-width: 1300px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-            <source media="(min-width: 1300px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
-            <img class="map__image" loading="lazy" src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" alt="Расположение на карте.">
-          </picture>
-
-          <div class="map__interactive" id="map">
-            <script src="https://api-maps.yandex.ru/2.1/?apikey=c214d7f7-bb76-458f-8f7b-6523a76e9c85&lang=ru_RU" type="text/javascript"></script>
-          </div>
-        </div>
-      </section>
+      @@include('./html/location.html')
     </main>
 
-    <footer class="footer">
-      <div class="page__container footer__container">
-        <a class="footer__logo logo" href="#">
-          <svg class="footer__logo-title" width="128" height="24" role="img" aria-label="Cat energy.">
-            <use href="img/sprite.svg#logo-title"></use>
-          </svg>
-        </a>
-
-        <div class="footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте</span>
-                <svg aria-hidden="true" focusable="false" width="27" height="17">
-                  <use href="img/sprite.svg#vkontakte"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Ютуб</span>
-                <svg aria-hidden="true" focusable="false" width="24" height="19">
-                  <use href="img/sprite.svg#youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграм</span>
-                <svg aria-hidden="true" focusable="false" width="20" height="18">
-                  <use href="img/sprite.svg#telegram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Разработано в</span>
-            <span>HTML Academy</span>
-            <svg class="copyright__link-icon" width="27" height="34">
-              <use href="img/sprite.svg#htmlacademy"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </footer>
+    @@include('./html/footer.html')
 
     <script src="js/scripts.min.js"></script>
   </body>
