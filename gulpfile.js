@@ -13,6 +13,7 @@ import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import concat from 'gulp-concat';
+import fileinclude from 'gulp-file-include';
 
 const styles2 = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
@@ -42,6 +43,10 @@ const styles = () => {
 // HTML
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
@@ -59,7 +64,7 @@ const scripts = () => {
 
 //Images@2x
 const copyImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*'])
     .pipe(rename({
       suffix: "@2x"
     }))
@@ -117,6 +122,7 @@ const copy = (done) => {
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
     'source/manifest.webmanifest',
+    'source/img/favicons/*',
 ], {
   base:'source'
 })

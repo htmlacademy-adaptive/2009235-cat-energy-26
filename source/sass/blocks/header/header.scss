@@ -37,7 +37,7 @@
     z-index: 3;
     border-bottom: 1px solid variables.$special-grey-lightnes;
 
-    &--index {
+    .header--index & {
       border: none;
     }
   }
@@ -75,11 +75,6 @@
 
   @include mixins.desktop {
     margin-top: 0;
-  }
-}
-
-.header__logo--index {
-  @include mixins.desktop {
     position: relative;
     z-index: 4;
   }
